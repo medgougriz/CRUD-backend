@@ -1,0 +1,26 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+input{
+    width: 40%;
+    border: 2px black solid;
+}
+
+.formpage{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    position: fixed;
+    width: 70%;
+    left: 15%;
+    border: black solid 6px;
+    border-radius: 20px;
+    height: 80vh;
+    background-color: aqua;
+}

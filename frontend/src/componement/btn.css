@@ -1,0 +1,18 @@
+.btn{
+    color: turquoise;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    margin: 10px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: turquoise;
+    color: rgb(45, 44, 44);
+    transform: scale(1.1);
+}
