@@ -24,3 +24,7 @@ input{
     height: 80vh;
     background-color: aqua;
 }
+
+.done{
+    display: none;
+}

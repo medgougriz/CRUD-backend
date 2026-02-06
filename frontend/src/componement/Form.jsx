@@ -1,6 +1,8 @@
 import "./form.css"
 import axios from "axios";
+import { useState } from "react";
 function Form() {
+    const [form, setForm] = useState(true);
     const submit = async (e)=> {
         e.preventDefault();
         const user ={
@@ -14,11 +16,16 @@ function Form() {
         }catch(e){
             console.error(e)
         }
+        document.getElementById("name").value = "";
+        document.getElementById("age").value = "";
+        document.getElementById("city").value = "";
+        setForm(false);
     }
         
     return (
         <>
-        <div className="formpage">
+        {form &&
+        <div className="formpage" id="fr">
         <form className="form" onSubmit={submit}>
             <p>create new person</p>
             <input id="name" type="text" placeholder="Name" />
@@ -27,6 +34,7 @@ function Form() {
             <button className="btn" type="submit" >Submit</button>
         </form>
         </div>
+}
         </>
     )
 }

@@ -1,10 +1,13 @@
 import './table.css'
+
 export default function Table({ data }) {
+
     return (
             <>
             <table>
                 <thead>
                     <tr>
+                        <th>id</th>
                         <th>Name</th>
                         <th>Age</th>
                         <th>City</th>
@@ -14,7 +17,8 @@ export default function Table({ data }) {
                 </thead>
                 <tbody>
                     {data.map((item, index) => (
-                        <tr key={index+1}>
+                        < tr key={index}>
+                            <td>{index+1}</td>
                             <td>{item.name}</td>
                             <td>{item.age}</td>
                             <td>{item.city}</td>

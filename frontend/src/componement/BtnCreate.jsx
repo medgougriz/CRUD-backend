@@ -1,5 +1,5 @@
 import "./btn.css"
-import Form from "./form"
+import Form from "./Form"
 import { useState } from "react"
 function BtnCreate() {
     const [form, setForm] = useState(false);
